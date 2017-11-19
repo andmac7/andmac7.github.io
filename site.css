@@ -1,0 +1,70 @@
+#txt-footer{
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align:center;
+    background-color:#847577;
+}
+
+.navbar-nav{
+    font-size: 30px;
+}
+
+.bg-topnav{
+    background-color: #847577;
+}
+
+.sect{
+    padding-bottom:20px;
+    min-height: 846px;
+}
+
+#welcome{
+    background-color:#A6A2A2;
+    padding-top: 58px;
+}
+#news{
+    background-color:#CFD2CD;
+}
+#games{
+    background-color:#A6A2A2;
+}
+#about{
+    background-color:#CFD2CD;
+}
+#contact{
+    background-color:#A6A2A2;
+}
+
+.card{
+    height:300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card-1{
+    background-image: url("./bgs/2.jpg");
+}
+.card-2{
+    background-image: url("./bgs/8.jpg");
+}
+.card-3{
+    background-image: url("./bgs/11.jpg");
+}
+.card-4{
+    background-image: url("./bgs/14.jpg");
+}
+.card-5{
+    background-image: url("./bgs/17.jpg");
+}
+
+@media screen and (max-width: 382px) {
+    #title img{
+        height:32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #logo img{
+        width: 174px;
+    }
+}
