@@ -34,8 +34,21 @@
     padding-bottom:50px;
 }
 
-.game-img img{
+.game-img {
+    margin-bottom:30px;
+}
+
+.img-large img{
     width:50%;
+}
+
+.img-medium img{
+    width:25%;
+}
+
+.img-text{
+    padding-top: 22px;
+    text-align: center;
 }
 
 #about{
