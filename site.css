@@ -29,6 +29,15 @@
 #games{
     background-color:#A6A2A2;
 }
+
+.sect-title{
+    padding-bottom:50px;
+}
+
+.game-img img{
+    width:50%;
+}
+
 #about{
     background-color:#CFD2CD;
 }
