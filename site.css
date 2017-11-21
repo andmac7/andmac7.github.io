@@ -38,12 +38,12 @@
     margin-bottom:30px;
 }
 
-.img-large img{
-    width:50%;
+.img-large{
+    width:100%;
 }
 
-.img-medium img{
-    width:25%;
+.img-medium{
+    width:40%;
 }
 
 .img-text{
@@ -78,6 +78,12 @@
 }
 .card-5{
     background-image: url("./bgs/17.jpg");
+}
+
+@media screen and (max-width: 500px) {
+    .img-medium{
+        width:75%;
+    }
 }
 
 @media screen and (max-width: 382px) {
