@@ -17,6 +17,20 @@
 .sect{
     padding-bottom:20px;
     min-height: 760px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: #4c4344;
+}
+
+footer {
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: #4c4344;
+}
+
+#unsinister-navbar {
+    border-bottom-style: solid;
+    border-color: #4c4344;
 }
 
 #welcome{
