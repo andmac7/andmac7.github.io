@@ -15,6 +15,10 @@
     font-size: 30px;
 }
 
+.img-screenshot{
+    border-radius: 20px;
+}
+
 .bg-topnav{
     background-color: #847577;
 }
