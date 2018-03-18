@@ -96,19 +96,7 @@ footer {
 }
 
 .card-1{
-    background-image: url("./bgs/2.jpg");
-}
-.card-2{
-    background-image: url("./bgs/8.jpg");
-}
-.card-3{
-    background-image: url("./bgs/11.jpg");
-}
-.card-4{
-    background-image: url("./bgs/14.jpg");
-}
-.card-5{
-    background-image: url("./bgs/17.jpg");
+    background-image: url("./bgs/2.png");
 }
 
 @media screen and (max-width: 500px) {
