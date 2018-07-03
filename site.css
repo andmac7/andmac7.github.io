@@ -129,9 +129,9 @@ footer {
 
 #bg-all {
     background-image: url("./bgs/2.png");
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: static;
 }
 
 @media screen and (max-width: 991px) {
