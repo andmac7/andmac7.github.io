@@ -131,18 +131,13 @@ footer {
     background-image: url("./bgs/2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: static;
 }
 
 @media screen and (max-width: 991px) {
     .sect {
         width:100%;
         border-radius:0px;
-    }
-
-    .bg-card {
-        background-image: url("./bgs/2.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
 
