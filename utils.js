@@ -17,6 +17,14 @@ function init() {
     document.getElementById("nav-contact").addEventListener('click',function (){
         scrollTo("#contact");
     });
+
+    $(".article-body").hide();
+    $(".article-title").append('<i class="arrow-icon fa fa-chevron-circle-right"></i>');
+    $(".article-title").click(function(){
+        $(this).find(".fa-chevron-circle-right").toggleClass("fa-chevron-circle-down");
+        $(this).parent(".article").find(".article-body").slideToggle("slow",function(){
+        });
+    });
 }
 
 function scrollTo(elmnt){
