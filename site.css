@@ -134,6 +134,16 @@ footer {
     background-attachment: fixed;
 }
 
+.list li {
+    padding-top: 10px;
+    list-style: upper-roman;
+}
+
+ul.list {
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
 @media screen and (max-width: 991px) {
     .sect {
         width:100%;

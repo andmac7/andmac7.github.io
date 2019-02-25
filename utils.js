@@ -2,15 +2,6 @@ function init() {
     document.getElementById("nav-top").addEventListener('click',function (){
         scrollTo("#welcome");
     });
-    document.getElementById("nav-news").addEventListener('click',function (){
-        scrollTo("#news");
-    });
-    document.getElementById("nav-about").addEventListener('click',function (){
-        scrollTo("#about");
-    });
-    document.getElementById("nav-games").addEventListener('click',function (){
-        scrollTo("#games");
-    });
     document.getElementById("nav-about").addEventListener('click',function (){
         scrollTo("#about");
     });
