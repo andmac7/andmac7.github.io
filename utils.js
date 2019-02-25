@@ -1,6 +1,14 @@
 function init() {
+    $(".showcase-img").click(function(){
+        $('#imagepreview').attr('src', $(this).attr('src'));
+        $('#imagemodal').modal('show');
+    });
+
     document.getElementById("nav-top").addEventListener('click',function (){
         scrollTo("#welcome");
+    });
+    document.getElementById("nav-showcase").addEventListener('click',function (){
+        scrollTo("#showcase");
     });
     document.getElementById("nav-about").addEventListener('click',function (){
         scrollTo("#about");

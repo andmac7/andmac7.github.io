@@ -73,11 +73,9 @@ footer {
     background-color:#A6A2A2;
     padding-top: 58px;
 }
-#news{
+
+#showcase{
     background-color:#CFD2CD;
-}
-#games{
-    background-color:#A6A2A2;
 }
 
 .sect-title{
@@ -104,11 +102,25 @@ footer {
     text-align: center;
 }
 
+.modal.show .modal-dialog {
+    display: table;
+}
+
+.showcase-img {
+    width: 300px;
+    margin: 16px;
+    border-radius: 4px;
+}
+
+#imagepreview {
+    max-width: 960px;
+}
+
 #about{
-    background-color:#CFD2CD;
+    background-color:#A6A2A2;
 }
 #contact{
-    background-color:#A6A2A2;
+    background-color:#CFD2CD;
 }
 
 .bg-card{
@@ -130,13 +142,17 @@ footer {
 #bg-all {
     background-image: url("./bgs/2.png");
     background-color: black;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .list li {
     padding-top: 10px;
-    list-style: upper-roman;
+    list-style: none;
+}
+
+.list li .fa {
+    margin-left: 28px;
+    margin-right: 28px;
 }
 
 ul.list {
