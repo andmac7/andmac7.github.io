@@ -24,6 +24,10 @@ function init() {
         $(this).parent(".article").find(".article-body").slideToggle("slow",function(){
         });
     });
+
+    window.onload = function() {
+        Gifffer();
+    }
 }
 
 function scrollTo(elmnt){

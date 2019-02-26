@@ -112,6 +112,12 @@ footer {
     border-radius: 4px;
 }
 
+.showcase-gif {
+    width: 600px;
+    margin: 16px;
+    border-radius: 4px;
+}
+
 #imagepreview {
     max-width: 960px;
 }
