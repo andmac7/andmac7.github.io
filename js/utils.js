@@ -1,36 +1,36 @@
 function init() {
-    $(".showcase-img").click(function(){
-        $('#imagepreview').attr('src', $(this).attr('src'));
-        $('#imagemodal').modal('show');
-    });
-
-    document.getElementById("nav-top").addEventListener('click',function (){
-        scrollTo("#welcome");
-    });
-    document.getElementById("nav-showcase").addEventListener('click',function (){
-        scrollTo("#showcase");
-    });
-    document.getElementById("nav-about").addEventListener('click',function (){
-        scrollTo("#about");
-    });
-    document.getElementById("nav-contact").addEventListener('click',function (){
-        scrollTo("#contact");
-    });
-
-    $(".article-body").hide();
-    $(".article-title").append('<i class="arrow-icon fa fa-chevron-circle-right"></i>');
-    $(".article-title").click(function(){
-        $(this).find(".fa-chevron-circle-right").toggleClass("fa-chevron-circle-down");
-        $(this).parent(".article").find(".article-body").slideToggle("slow",function(){
-        });
-    });
-
     window.onload = function() {
+        $(".showcase-img").click(function(){
+            $('#imagepreview').attr('src', $(this).attr('src'));
+            $('#imagemodal').modal('show');
+        });
+    
+        document.getElementById("nav-top").addEventListener('click',function (){
+            panTo("#welcome");
+        });
+        document.getElementById("nav-showcase").addEventListener('click',function (){
+            panTo("#showcase");
+        });
+        document.getElementById("nav-about").addEventListener('click',function (){
+            panTo("#about");
+        });
+        document.getElementById("nav-contact").addEventListener('click',function (){
+            panTo("#contact");
+        });
+    
+        $(".article-body").hide();
+        $(".article-title").append('<i class="arrow-icon fa fa-chevron-circle-right"></i>');
+        $(".article-title").click(function(){
+            $(this).find(".fa-chevron-circle-right").toggleClass("fa-chevron-circle-down");
+            $(this).parent(".article").find(".article-body").slideToggle("slow",function(){
+            });
+        });
+
         Gifffer();
     }
 }
 
-function scrollTo(elmnt){
+function panTo(elmnt){
     $('html,body').animate({
         scrollTop: $(elmnt).offset().top-64
     });
