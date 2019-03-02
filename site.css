@@ -106,18 +106,6 @@ footer {
     display: table;
 }
 
-.showcase-img {
-    width: 300px;
-    margin: 16px;
-    border-radius: 4px;
-}
-
-.showcase-gif {
-    max-width: 600px;
-    margin: 16px;
-    border-radius: 4px;
-}
-
 #imagepreview {
     max-width: 960px;
 }
@@ -142,7 +130,7 @@ footer {
     height: 50px;
 }
 .card-1{
-    height:200px;
+    height:220px;
 }
 
 #bg-all {
@@ -164,6 +152,32 @@ footer {
 ul.list {
     margin-left: 72px;
     margin-right: 72px;
+}
+
+/*
+IMAGE SHOWCASE
+*/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+article {
+    position: relative;
+}
+
+.article-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 991px) {
