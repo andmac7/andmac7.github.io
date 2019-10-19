@@ -8,6 +8,9 @@ function init() {
         document.getElementById("nav-top").addEventListener('click',function (){
             panTo("#welcome");
         });
+        document.getElementById("nav-games").addEventListener('click',function (){
+            panTo("#games");
+        });
         document.getElementById("nav-showcase").addEventListener('click',function (){
             panTo("#showcase");
         });
