@@ -1,16 +1,72 @@
+:root { 
+    --col-1: #9FF9CE;
+    --col-2: #3B6B86;
+    --col-3: #273A61;
+    --col-4: #F67629;
+    --col-5: #85E3F6;
+    --col-6: #000000;
+
+    --a: var(--col-1);
+    --a-hover: var(--col-2);
+    --nav-bg: var(--col-3);
+    --nav-txt: var(--col-1);
+    --nav-border: var(--col-4);
+    --article-title: var(--col-4);
+    --sect-bg-1: var(--col-3);
+    --sect-bg-2: var(--col-3);
+    --txt: var(--col-1);
+    --titles: var(--col-4);
+}
+
+p, li {
+    color: var(--txt);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p, h3, h4 {
+    color: var(--txt);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#title {
+    transform: skew(-5deg);
+}
+
+.text-center {
+    color: var(--txt);
+}
+
 a {
-    color: #8c8484;
+    color: var(--a);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--nav-txt);
+    font-family: 'Caveat Brush', cursive;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--col-4);
+}
+
+.navbar-dark .navbar-nav .nav-link:active {
+    color: var(--col-4);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--col-4);
 }
 
 a:hover {
-    color: #A6A2A2;
+    color: var(--a-hover);
 }
 
 #txt-footer{
+    color: var(--a);
     padding-top:100px;
     padding-bottom:100px;
     text-align:center;
-    background-color:#847577;
+    background-color: var(--nav-bg);
     margin-bottom: 0px;
 }
 
@@ -20,7 +76,7 @@ a:hover {
 }
 
 h2.article-title {
-    background-color: #a6a2a266;
+    background-color: var(--article-title);
     padding: 22px;
     cursor: pointer;
 }
@@ -44,45 +100,58 @@ h2.article-title {
 }
 
 .bg-topnav{
-    background-color: #847577;
+    background-color: var(--nav-bg);
 }
 
-.sect{
+.highlight {
+    background: url(./imgs/brush.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 40% 100%;
+    padding: 8px 0;
+}
+
+.sect {
     padding: 30px;
     min-height: auto;
-    border-style: solid;
-    border-color: #4c4344;
-    width: 940px;
+    width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    transform: skew(-5deg);
+    border-color: var(--col-2);
+    border-width: 2px;
+    border-style: solid;
+}
+
+.sect-inner {
+    transform: skew(5deg);
 }
 
 footer {
     border-bottom-style: solid;
     border-top-style: solid;
-    border-color: #4c4344;
+    border-color: var(--nav-border);
 }
 
 #unsinister-navbar {
     border-bottom-style: solid;
-    border-color: #4c4344;
+    border-color: var(--nav-border);
 }
 
 #welcome{
-    background-color:#A6A2A2;
+    background-color: var(--sect-bg-1);
     padding-top: 58px;
 }
 
 #showcase{
-    background-color:#CFD2CD;
+    background-color: var(--sect-bg-2);
 }
 
 .sect-title{
+    font-family: 'Caveat Brush', cursive;
+    color: var(--titles);
     padding-bottom: 25px;
     margin-bottom: 25px;
-    border-bottom-style: dashed;
-    border-bottom-width: 1px;
 }
 
 .game-img {
@@ -111,19 +180,19 @@ footer {
 }
 
 #about{
-    background-color:#CFD2CD;
+    background-color:var(--sect-bg-2);
 }
 #games{
-    background-color:#A6A2A2;
+    background-color:var(--sect-bg-1);
 }
 #contact{
-    background-color:#CFD2CD;
+    background-color:var(--sect-bg-2);
 }
 
 .bg-card{
     background-repeat: no-repeat;
     background-attachment: fixed;
-    border-left: 6px dotted #CFD2CD;
+    border-left: 6px dashed var(--col-1);
     margin-left: auto;
     width: 50%;
 }
@@ -137,9 +206,10 @@ footer {
 }
 
 #bg-all {
-    background-image: url("./bgs/background.jpg");
     background-color: black;
     background-attachment: fixed;
+
+    background-image: linear-gradient(to bottom, var(--col-6), 90%, var(--col-5));
 }
 
 .list li {
@@ -173,14 +243,38 @@ IMAGE SHOWCASE
     margin: 0;
 }
 
+.space {
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
 article {
     position: relative;
 }
 
 .article-img {
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    
+    border-color: var(--col-4);
+    border-width: 1px;
+    border-style: dashed;
+}
+
+.collage-img {
     height: 100%;
     width: 100%;
+    max-width: 800px;
     object-fit: cover;
+    
+    border-color: var(--col-4);
+    border-width: 1px;
+    border-style: dashed; 
+}
+
+#logo img{
+    width: 40%;
 }
 
 @media screen and (max-width: 991px) {

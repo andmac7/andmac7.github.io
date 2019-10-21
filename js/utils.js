@@ -33,9 +33,9 @@ function init() {
     }
 }
 
-function panTo(elmnt){
+function panTo(elmnt) {
     $('html,body').animate({
-        scrollTop: $(elmnt).offset().top-64
+        scrollTop: $(elmnt).offset().top-128
     });
 }
 
