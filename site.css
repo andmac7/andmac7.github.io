@@ -18,19 +18,10 @@
     --titles: var(--col-4);
 }
 
-p, li {
+p, li, h3, h4 {
     color: var(--txt);
     font-family: 'Fira Sans', sans-serif;
-}
-
-p, h3, h4 {
-    color: var(--txt);
-    font-family: 'Fira Sans', sans-serif;
-}
-
-#title {
-    transform: skew(-5deg);
-}
+} 
 
 .text-center {
     color: var(--txt);
