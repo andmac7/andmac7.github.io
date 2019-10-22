@@ -112,6 +112,7 @@ h2.article-title {
     border-color: var(--col-2);
     border-width: 2px;
     border-style: solid;
+    background-image: linear-gradient(to bottom right, var(--col-6), 25%, var(--col-3));
 }
 
 .sect-inner {
