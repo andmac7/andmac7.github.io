@@ -113,6 +113,7 @@ h2.article-title {
     border-width: 2px;
     border-style: solid;
     background-image: linear-gradient(to bottom right, var(--col-6), 25%, var(--col-3));
+    overflow: hidden;
 }
 
 .sect-inner {
@@ -269,14 +270,34 @@ article {
     width: 40%;
 }
 
+@media screen and (max-width: 1200px) {
+    .sect {
+        width: 1000px;
+        transform:skew(0deg);
+    }
+    .sect-inner {
+        transform:skew(0deg);
+    }
+}
+
 @media screen and (max-width: 991px) {
     .sect {
         width:100%;
         border-radius:0px;
+        transform:skew(0deg);
+    }
+
+    .sect-inner {
+        transform:skew(0deg);
     }
 }
 
 @media screen and (max-width: 500px) {
+
+    #logo img {
+        width: 60%;
+    }
+
     .img-medium{
         width:75%;
     }
