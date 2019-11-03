@@ -293,6 +293,9 @@ article {
 }
 
 @media screen and (max-width: 500px) {
+    .cards {
+        grid-template-columns: none;
+    }
 
     #logo img {
         width: 60%;
